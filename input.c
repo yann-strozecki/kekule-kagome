@@ -37,7 +37,7 @@ void printbinary(int code, int size)
     {
       printf("%d", code%2);
       code /= 2;
-  }
+    }
 }
 
 void printindex(int code, int codesize, int base){
