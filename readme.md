@@ -29,7 +29,7 @@ These ASCII files have the following simple structure:
 
 * On the first line, there are two integers, the first one is the number of motifs and the second is any value (it is a legacy option, not in use anymore).
 * Each line describes one motif as a sequence of integers.  The first one is an identifier, typically 
- a position in the alphabet (motif I is 9). The second one is the degree of the motif. Then, the labels or colors of the edges are given in order. To represent the complementary of the color given by the integer n, we use -n. The color should be 
+ a position in the alphabet (motif I is 9). The second one is the degree of the motif. Then, the labels or colors of the edges are given in order. To represent the complementary of the color given by the integer n, we use -n.  
 
 
 <!-- HOW TO USE -->
@@ -59,12 +59,15 @@ There are several constants defined, the main ones being:
 
 After changing a constant, you need to recompile the program.
 
+## Extensions
+
+There a several experimental features in the code such as the possibility of using motifs made from
+two simpler motifs. We also have a more recent unpublished version with several performance improvements.
+If you need any information about this program or extensions of this program, please contact an author.
+
 
 <!-- CONTACT -->
 ## Contact
 
 Yann Strozecki -  yann.strozecki@uvsq.fr
 
-There a several experimental features in the code such as the possibility of using motifs made from
-two simpler motifs. We also have a more recent private version with several performance improvements.
-If you need any information about that, contact me or another author.
