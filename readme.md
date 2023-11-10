@@ -24,8 +24,8 @@ It can be compiled by typing make in your terminal, provided you have make insta
 
 ## The .mot files
 
-A .mot file which describes the motifs you want to use to generates maps.
-These ASCII files have the following simple structure:
+A .mot file describes the motifs you want to use to generates maps.
+They are ASCII files with the following simple structure:
 
 * On the first line, there are two integers, the first one is the number of motifs and the second is any value (it is a legacy option, not in use anymore).
 * Each line describes one motif as a sequence of integers.  The first one is an identifier, typically 
@@ -49,21 +49,20 @@ For instance, if you type make IVV, you compile the program and run the generati
 ## How to configure this program
 
 The different options are provided in the parameters.h file.
-There are several constants defined, the main ones being:
+They can be changed by choosing values for several constants defined in parameters.h, the main ones being.
 
-* BACKBONETYPE 1: 0 for generating tree, 1 for generating path, 2 for generating cycle
-* FOLDSTEP 1: 0 for generating backbone only, 1 to do the folding of the backbone
-* ALMOSTFOLDABLE 1: 0 for generating all paths, 1 for generating the almost foldable only
-* NBMAXNODESINAVL 1000000: Maximum number of generated element. To avoid saturating your memory. 
-* NBFILEMAX 2000: Maximum number of files written in the Results directory. Avoid trashing your drive.
+* BACKBONETYPE: 0 for generating tree, 1 for generating path, 2 for generating cycle
+* FOLDSTEP: 0 for generating backbone only, 1 to do the folding of the backbone
+* ALMOSTFOLDABLE: 0 for generating all paths, 1 for generating the almost foldable only
+* NBMAXNODESINAVL: Maximum number of generated element. To avoid saturating your memory. 
+* NBFILEMAX: Maximum number of files written in the Results directory. Avoid trashing your drive.
 
 After changing a constant, you need to recompile the program.
 
 ## Extensions
 
 There a several experimental features in the code such as the possibility of using motifs made from
-two simpler motifs. We also have a more recent unpublished version with several performance improvements.
-If you need any information about this program or extensions of this program, please contact an author.
+two simpler motifs (MetaMotif). We also have a more recent unpublished version with several performance improvements. If you need any information about this program or its extensions, please contact an author.
 
 
 <!-- CONTACT -->
